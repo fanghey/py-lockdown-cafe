@@ -1,4 +1,4 @@
-from .errors import VaccineError
+from .errors import VaccineError, NotWearingMaskError
 from .cafe import Cafe
 
 
@@ -8,6 +8,8 @@ def go_to_cafe(friends: list[dict], cafe: Cafe) -> str:
             cafe.visit_cafe(friend)
         except VaccineError:
             return "All friends should be vaccinated"
+        except NotWearingMaskError:
+            continue
 
     masks_to_buy = 0
 

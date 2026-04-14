@@ -1,5 +1,5 @@
-from errors import VaccineError
-from cafe import Cafe
+from .errors import VaccineError
+from .cafe import Cafe
 
 
 def go_to_cafe(friends: list[dict], cafe: Cafe) -> str:

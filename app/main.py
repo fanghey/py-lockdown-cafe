@@ -18,4 +18,3 @@ def go_to_cafe(friends: list[dict], cafe: Cafe) -> str:
     if masks_to_buy == 0:
         return f"Friends can go to {cafe.name}"
     return f"Friends should buy {masks_to_buy} masks"
-    

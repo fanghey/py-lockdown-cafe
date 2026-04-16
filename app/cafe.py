@@ -1,5 +1,6 @@
 import datetime
-from .errors import (
+
+from app.errors import (
     NotVaccinatedError,
     OutdatedVaccineError,
     NotWearingMaskError,
@@ -7,7 +8,6 @@ from .errors import (
 
 
 class Cafe:
-
     def __init__(self, name: str) -> None:
         self.name = name
 
